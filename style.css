@@ -1,0 +1,59 @@
+/* Reset and base styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: 'Courier New', monospace;
+}
+
+/* Container fills the viewport and centers content vertically + horizontally */
+#container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;     /* stack clock and date vertically */
+  justify-content: center;    /* vertical center */
+  align-items: center;        /* horizontal center */
+  text-align: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Clock container */
+.clock {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* FORCE FlipClock wrapper to be horizontally centered */
+.clock .flip-clock-wrapper {
+  position: static !important;     /* override any positioning */
+  margin: 0 auto !important;       /* center horizontally */
+  float: none !important;          /* override any floats */
+  display: inline-block !important; /* shrink-wrap and center */
+  left: auto !important;
+  right: auto !important;
+}
+
+/* Date below clock */
+#date {
+  margin-top: 1rem;
+  font-size: 2vw;
+  color: #ccc;
+  user-select: none;
+  line-height: 1.2;
+}
+
+/* Footer pinned to bottom center */
+#footer {
+  position: fixed;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2vw;
+  color: #34c6ed;
+  font-style: italic;
+  user-select: none;
+}
