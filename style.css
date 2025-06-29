@@ -87,3 +87,14 @@ html, body {
     padding: 0 0.5rem;
   }
 }
+
+.clustrmaps-link {
+  color: #FF5733;  /* Change to your desired color */
+  text-decoration: none;  /* Removes underline */
+}
+
+.clustrmaps-link:hover {
+  color: #C70039;  /* Change color on hover (e.g., a darker red) */
+  text-decoration: underline;  /* Optional: Add underline on hover */
+}
+
